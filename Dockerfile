@@ -7,7 +7,6 @@ RUN apt update && \
     add-apt-repository ppa:openjdk-r/ppa && \
     apt-get update && \
     apt-get install openjdk-8-jdk -y && \
-    apt-get update && \
     apt-get install -y lrzsz git unzip vim curl wget maven docker-engine=1.13.0-0~ubuntu-xenial
 RUN curl -o /usr/local/docker-compse https://github.com/docker/compose/releases/download/1.11.2/docker-compose-Linux-x86_64 && \
     chmod +x /usr/local/docker-compse
