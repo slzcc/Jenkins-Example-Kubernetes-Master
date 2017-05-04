@@ -6,7 +6,7 @@ RUN apt update && \
     add-apt-repository ppa:openjdk-r/ppa && \
     apt-get update && \
     apt-get install openjdk-8-jdk -y && \
-    apt-get install -y lrzsz git unzip vim curl wget maven npm python3 python3-pip dig && \
+    apt-get install -y lrzsz git unzip vim curl wget maven npm nodejs python3 python3-pip dig && \
     rm -rf /var/lib/apt/lists/*
 RUN curl -o /usr/local/docker-compse https://github.com/docker/compose/releases/download/1.11.2/docker-compose-Linux-x86_64 && \
     chmod +x /usr/local/docker-compse
