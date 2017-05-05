@@ -4,9 +4,7 @@ COPY slave.jar /usr/share/jenkins/slave.jar
 COPY docker /bin/docker
 RUN apt update && \
     apt-get install -y software-properties-common && \
-    add-apt-repository ppa:openjdk-r/ppa && \
     apt-get update && \
-    apt-get install openjdk-8-jdk -y && \
     apt-get install -y lrzsz git unzip vim curl wget maven npm nodejs dnsutils net-tools && \
     rm -rf /var/lib/apt/lists/* && \
     pip install jinja2
