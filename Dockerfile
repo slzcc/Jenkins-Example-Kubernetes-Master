@@ -1,4 +1,4 @@
-FROM ubuntu:16.04
+FROM python:3
 COPY jenkins-slave /usr/local/bin/jenkins-slave
 COPY slave.jar /usr/share/jenkins/slave.jar
 COPY docker /bin/docker
