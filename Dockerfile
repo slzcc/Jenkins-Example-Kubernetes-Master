@@ -6,10 +6,10 @@ RUN apt update && \
     apt-get install -y software-properties-common && \
     add-apt-repository ppa:openjdk-r/ppa && \
     apt-get update && \
-    apt-get install openjdk-8-jdk && \
+    apt-get install -y openjdk-8-jdk && \
     apt-get install -y lrzsz git unzip vim curl wget maven npm nodejs dnsutils net-tools python3 python3-pip && \
     rm -rf /var/lib/apt/lists/* && \
-    pip install jinja2
+    pip3 install jinja2
 RUN curl -o /usr/local/docker-compse https://github.com/docker/compose/releases/download/1.11.2/docker-compose-Linux-x86_64 && \
     chmod +x /usr/local/docker-compse
 ENV MAVEN_VERSION=3.3.9 \
